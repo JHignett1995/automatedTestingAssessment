@@ -7,10 +7,17 @@ import org.openqa.selenium.support.PageFactory;
 
 public class JenkinsHome {
 
-	@FindBy(xpath = "//*[@id=\"tasks\"]/div[1]/a[2]")
+	@FindBy(xpath = "//*[@id=\"tasks\"]/div[1]/a[1]/img")
 	private WebElement newTask;
 	
-	public void click(WebDriver driver) {
+	@FindBy(xpath = "//*[@id=\"tasks\"]/div[4]/a[1]/img")
+	WebElement manageJk;
+	
+	public void clickManageJenk() {
+		manageJk.click();
+	}
+	
+	public void clickNewTask(WebDriver driver) {
 		newTask.click();
 		NewTask newTask = PageFactory.initElements(driver, NewTask.class);
 	}
