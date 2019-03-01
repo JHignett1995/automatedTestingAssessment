@@ -1,0 +1,4 @@
+com\qa\assessment\StepDefinition.class
+com\qa\assessment\TaskTwoTest.class
+com\qa\assessment\TaskOneTest.class
+com\qa\assessment\CucumberRunnerTest.class
